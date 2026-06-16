@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ems-microrredes-isoladas"
+version = "0.1.0"
+description = "Simulador publico e sanitizado para estrategias EMS em microrredes isoladas PV/BESS/Diesel."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "numpy",
+  "pandas",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
